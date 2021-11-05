@@ -1,5 +1,5 @@
-# Ruby on Rails Tutorial sample application
+# Ruby on Rails Tutorial - mock Twitter app
 
-This is the sample application for [*Ruby on Rails Tutorial: Learn Web Development
+This is the Twitter-like sample application for [*Ruby on Rails Tutorial: Learn Web Development
 with Rails*](https://www.railstutorial.org/)
 (6th edition) by Michael Hartl
