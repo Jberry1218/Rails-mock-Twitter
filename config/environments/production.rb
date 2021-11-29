@@ -57,12 +57,11 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
+  config.action_mailer.perform_caching = false
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "sample_app_production"
-
-  config.action_mailer.perform_caching = false
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   host = "https://serene-peak-87068.herokuapp.com/"
@@ -71,8 +70,8 @@ Rails.application.configure do
     :address => "smtp.sendgrid.net",
     :port => "587",
     :authentication => :plain,
-    :user_name => ENV["SENDGRID_USERNAME"],
-    :password => ENV["SENDGRID_PASSWORD"],
+    :user_name => "apikey",
+    :password => ENV["SENDGRID_API_KEY"],
     :domain => "heroku.com",
     :enable_starttls_auto => true
   }
