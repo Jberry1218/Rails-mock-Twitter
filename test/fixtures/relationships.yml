@@ -1,0 +1,15 @@
+one: 
+  follower: john_doe
+  followed: rand
+
+two:
+  follower: john_doe
+  followed: malory
+
+three:
+  follower: rand
+  followed: john_doe
+
+four:
+  follower: archer
+  followed: john_doe
